@@ -3,10 +3,10 @@ import mssql from "mssql";
 
 export const sqlConfig = {
   
-  user: '',
-  password: '',
-  database: '',
-  server:'',
+  user: 'sa',
+  password: 'sql.jane',
+  database: 'PROJECTS',
+  server:'DESKTOP-G3PNO3V',
 
   pool: {
     max: 10,

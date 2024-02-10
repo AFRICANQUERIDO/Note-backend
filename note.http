@@ -1,31 +1,32 @@
-POST http://localhost:4100/
+POST http://localhost:4100/note/createnote
 Content-Type: application/json
 
 {
-    "Title": "Code",
-    "Content": "I will code",
-    "createAt": "1/2/2023"
+    "Title": "Eat",
+    "Content": "I will eat a balanced diet",
+    "createAt": "10/02/2023"
 }
 
-
 ### GET ALL Notes
-GET http://localhost:4100/
+GET http://localhost:4100/note/notes
 Content-Type: application/json
 
 ### Gettinhg note by id
-GET http://localhost:4100/notes
+GET http://localhost:4100/note/802a89b8-891a-4d0a-924f-4526e538b255
 content-Type: application/json
 
 
 ### UPDATE Notes DETAILS
-PUT http://localhost:4100/notes/update
+PUT http://localhost:4100/note/update/802a89b8-891a-4d0a-924f-4526e538b255
 Content-Type: application/json
 
 {
-
+ "Title": "Relax then code",
+    "Content": "I will code",
+    "createAt": "1/2/2023"
 }
 
-### DELETE USER
-DELETE http://localhost:4100/notes/delete
+### DELETE Note
+DELETE http://localhost:4100/note/delete/802a89b8-891a-4d0a-924f-4526e538b255
 Content-Type: application/json
 
